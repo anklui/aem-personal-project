@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>My Project - All</comment>
+<entry key="createdBy">luite</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">myproject.all</entry>
+<entry key="created">2022-07-02T13:05:30.170+05:30</entry>
+<entry key="groupId">com.myproject</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">application</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.myproject</entry>
+<entry key="description">All content package for My Project</entry>
+<entry key="artifactId">myproject.all</entry>
+</properties>

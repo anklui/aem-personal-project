@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: My Project - UI content
+Content-Package-Roots: /conf/myproject,/content/dam/myproject,/content
+ /experience-fragments/myproject,/content/myproject
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: luite
+Implementation-Vendor-Id: com.myproject
+Content-Package-Dependencies: com.myproject:myproject.ui.apps:1.0-SNAP
+ SHOT
+Content-Package-Type: content
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_191
+Content-Package-Description: UI content package for My Project
+Content-Package-Id: com.myproject:myproject.ui.content:1.0-SNAPSHOT
+

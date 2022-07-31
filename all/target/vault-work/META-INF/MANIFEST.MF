@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: My Project - All
+Content-Package-Roots: /apps/myproject-packages,/apps/myproject-vendor
+ -packages
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: luite
+Implementation-Vendor-Id: com.myproject
+Content-Package-Type: application
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_191
+Content-Package-Description: All content package for My Project
+Content-Package-Id: com.myproject:myproject.all:1.0-SNAPSHOT
+
