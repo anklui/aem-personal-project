@@ -1,0 +1,5 @@
+com\myproject\core\schedulers\SimpleScheduledTaskTest.class
+com\myproject\core\listeners\SimpleResourceListenerTest.class
+com\myproject\core\models\HelloWorldModelTest.class
+com\myproject\core\servlets\SimpleServletTest.class
+com\myproject\core\filters\LoggingFilterTest.class
