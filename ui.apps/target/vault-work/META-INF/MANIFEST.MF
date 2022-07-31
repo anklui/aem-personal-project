@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Implementation-Title: My Project - UI apps
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: luite
+Implementation-Vendor-Id: com.myproject
+Content-Package-Dependencies: adobe/cq60:core.wcm.components.content:2
+ .8.0,adobe/cq60:core.wcm.components.config:2.8.0
+Import-Package: com.myproject.core.models;version="[1.0.0,2.0.0)",org.
+ apache.sling.scripting.sightly;version="[2.0.0,3.0.0)"
+Content-Package-Type: application
+Content-Package-Description: UI apps package for My Project
+Content-Package-Roots: /apps/myproject
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_191
+Content-Package-Id: com.myproject:myproject.ui.apps:1.0-SNAPSHOT
+
