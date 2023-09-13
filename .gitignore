@@ -1,0 +1,7 @@
+**/.idea
+**/.git
+**/target
+*.iml
+*.xml
+!important/*.xml
+pom.*
