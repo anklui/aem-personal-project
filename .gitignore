@@ -5,3 +5,4 @@
 *.xml
 !important/*.xml
 pom.*
+.content.*

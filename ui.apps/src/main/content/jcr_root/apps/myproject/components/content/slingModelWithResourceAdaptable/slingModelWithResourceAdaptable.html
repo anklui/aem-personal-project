@@ -1,0 +1,27 @@
+
+<div class="cmp-helloworld" data-cmp-is="helloworld">
+    -------------------------SlingModelWithResourceAdaptable-starts----------------------------
+    <div class="cmp-helloworld__item" data-sly-use.allAnnotations="com.myproject.core.models.SlingModelWithResourceAdaptable">
+        <sly data-sly-test="${allAnnotations.text1}">
+            <p class="cmp-helloworld__item-label">(@Named) Model text1:</p>
+            <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${allAnnotations.text1}</pre>
+        </sly>
+        <sly data-sly-test="${allAnnotations.text2}">
+            <p class="cmp-helloworld__item-label">(@OSGIService) Model text2:</p>
+            <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${allAnnotations.text2}</pre>
+        </sly>
+        <sly data-sly-test="${allAnnotations.text3}">
+            <p class="cmp-helloworld__item-label">Model text3:</p>
+            <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${allAnnotations.text3}</pre>
+        </sly>
+        <sly data-sly-test="${allAnnotations.text4}">
+            <p class="cmp-helloworld__item-label">(run mode array) Model text4:</p>
+            <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${allAnnotations.text4}</pre>
+        </sly>
+        <sly data-sly-test="${allAnnotations.text5}">
+            <p class="cmp-helloworld__item-label">(UserId of Resource Resolver) Model text5:</p>
+            <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${allAnnotations.text5}</pre>
+        </sly>
+        ------------------------SlingModelWithResourceAdaptable-ends----------------------------
+    </div>
+</div>
