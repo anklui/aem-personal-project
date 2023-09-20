@@ -1,9 +1,9 @@
 com\myproject\core\schedulers\SimpleScheduledTask.class
+com\myproject\core\schedulers\package-info.class
 com\myproject\core\servlets\SimpleServlet.class
 com\myproject\core\servlets\package-info.class
 com\myproject\core\filters\package-info.class
 com\myproject\core\models\HelloWorldModel.class
-com\myproject\core\schedulers\package-info.class
 com\myproject\core\listeners\package-info.class
 com\myproject\core\models\package-info.class
 com\myproject\core\listeners\SimpleResourceListener.class
