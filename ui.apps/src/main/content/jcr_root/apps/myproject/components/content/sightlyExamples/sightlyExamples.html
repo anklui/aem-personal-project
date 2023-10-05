@@ -1,0 +1,84 @@
+
+<div class="cmp-helloworld" data-cmp-is="helloworld">
+
+    <-!--/* An HTL Comment */-->
+    <!-- An HTML Comment -->
+
+    <!-- /* Loading multiple client libraries fully at once */-->
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.all @ categories=['myCategory1', 'myCategory2']}"/>
+
+    <!-- /* Referencing a client library in different sections of a page */-->
+   <-!--/*
+        <!doctype html>
+        <html data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+        <head>
+            <sly data-sly-call="${clientlib.css @ categories='myCategory'}"/>
+        </head>
+        <body>
+        <sly data-sly-call="${clientlib.js @ categories='myCategory'}"/>
+        </body>
+        </html>
+    */-->
+
+
+    <!-- /* Client Side Js */-->
+    <p data-sly-use.sightlyExamplesHelper="sightlyExamplesHelper.js">
+        <a href="${sightlyExamplesHelper.link}" title="${sightlyExamplesHelper.title}">
+            ${sightlyExamplesHelper.text}
+        </a>
+    </p>
+    <!-- /* Json Response via Client Side Js */-->
+    <!-- /* $("#jsonHelper").attr("data-json"); */-->
+    <div data-sly-use.jsonHelper="jsonHelper.js" id="jsonHelper" data-json="${jsonHelper.json}">...jsonHelper...</div>
+
+
+    <!-- /* Contexts */-->
+    <sly data-sly-set.myTrackingID="trckId"/>
+    <sly data-sly-set.myFont="helvetica"/>
+    <sly data-sly-set.myElementName="h2"/>
+    <sly data-sly-set.myAttribute="class"/>
+
+    <!-- /* scriptString & styleString */-->
+    <script> var trackingID = "${myTrackingID @ context='scriptString'}"; </script>
+    <style> a { font-family: "${myFont @ context='styleString'}"; } </style>
+
+    <!-- /* Elements & Attributes */-->
+    <h1 data-sly-element="${myElementName}" data-sly-attribute="${myAttribute}">...Element & Attribute...</h1>
+
+    component.dialogPath.toLowerCase: ${component.dialogPath.toLowerCase}
+    <br>
+    componentContext.page.parent.navigationTitle: ${componentContext.page.parent.navigationTitle.toLowerCase}
+    <br>
+    currentDesign.cssPath.toLowerCase: ${currentDesign.cssPath.toLowerCase}
+    <br>
+    currentNode.primaryNodeType: ${currentNode.primaryNodeType.name.toLowerCase}
+    <br>
+    currentPage.navigationTitle: ${currentPage.navigationTitle.toLowerCase}
+    <br>
+    currentPage.listChildren: ${currentPage.listChildren.toString}
+    <br>
+    currentPage.template: ${currentPage.template.name.toLowerCase}
+    <br>
+    currentPage.lastModifiedBy: ${currentPage.lastModifiedBy.toLowerCase}
+    <br>
+    currentStyle.values.toArray: ${currentStyle.values.stream.toArray.toString.toLowerCase}
+    <br>
+    currentSession.id: ${currentSession.id.toLowerCase}
+    <br>
+    log.name: ${log.name.toLowerCase}
+    <br>
+    request.requestPathInfo: ${request.requestPathInfo.resourcePath.toLowerCase}
+    <br>
+    resourcePage.navigationTitle: ${resourcePage.navigationTitle.toLowerCase}
+    <br>
+    wcmmode.preview: ${wcmmode.preview}
+    <br>
+    slyWcmHelper.mode: ${slyWcmHelper.mode}
+    <br>
+    sling.script.scriptResource: ${sling.script.scriptResource}
+    <br>
+    response.committed: ${response.committed}
+
+
+</div>
